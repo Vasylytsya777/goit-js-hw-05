@@ -6,8 +6,8 @@ class Car {
 	 * который принимает объект-машину как параметр и выводит
 	 * в консоль значения свойств maxSpeed, speed, isOn, distance и price.
 	 */
-	static getSpecs(Car) {
-		return console.log(Car)
+	static getSpecs(сar) {
+		return console.log(сar)
 	}
 
 	/*
@@ -25,18 +25,18 @@ class Car {
 		this.speed = speed
 		this.isOn = isOn
 		this.distance = distance
-		this._price = price
+		this.price = price
 	}
 
 	/*
 	 * Добавь геттер и сеттер для свойства price,
 	 * который будет работать с свойством цены автомобиля.
 	 */
-	get price() {
+	get newPrice() {
 		return this._price
 	}
 
-	set price(value) {
+	set newPrice(value) {
 		this._price = value
 	}
 	/*
@@ -99,9 +99,7 @@ const mustang = new Car({ maxSpeed: 200, price: 2000 })
 //======================================
 
 mustang.turnOn()
-
 mustang.accelerate(50)
-
 mustang.drive(2)
 
 Car.getSpecs(mustang)
