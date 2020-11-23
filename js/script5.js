@@ -20,7 +20,7 @@ class Car {
 	 *  isOn - заведен ли автомобиль, значения true или false. Изначально false
 	 *  distance - общий киллометраж, изначально 0
 	 */
-	constructor({ maxSpeed, speed = 0, isOn = false, distance = 0, price }) {
+	constructor({ maxSpeed, price }, speed = 0, isOn = false, distance = 0) {
 		this.maxSpeed = maxSpeed
 		this.speed = speed
 		this.isOn = isOn
