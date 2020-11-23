@@ -65,11 +65,11 @@ class Car {
 	// ==============================
 	// ================================ тут мені pritier сам поставив this.maxSped
 	accelerate(value) {
-		this.speed += value
-		if (this.speed <= this.maxSpeed) {
-			return this.speed
+		if (this.speed + value < this.maxSpeed) {
+			this.speed += value
+		} else {
+			this.speed = this.maxSpeed
 		}
-		return (this.speed -= value)
 	}
 
 	/*
@@ -77,11 +77,11 @@ class Car {
 	 * при условии что результирующая скорость не меньше нуля
 	 */
 	decelerate(value) {
-		this.speed -= value
-		if (this.speed >= 0) {
-			return this.speed
+		if (this.speed - value > 0) {
+			this.speed -= value
+		} else {
+			this.speed = 0
 		}
-		return (this.speed += value)
 	}
 
 	/*
