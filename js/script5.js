@@ -62,8 +62,6 @@ class Car {
 	 * при условии что результирующая скорость
 	 * не больше чем значение свойства maxSpeed
 	 */
-	// ==============================
-	// ================================ тут мені pritier сам поставив this.maxSped
 	accelerate(value) {
 		if (this.speed + value < this.maxSpeed) {
 			this.speed += value
