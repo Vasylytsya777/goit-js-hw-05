@@ -33,11 +33,11 @@ class Car {
 	 * который будет работать с свойством цены автомобиля.
 	 */
 	get newPrice() {
-		return this._price
+		return this.price
 	}
 
 	set newPrice(value) {
-		this._price = value
+		this.price = value
 	}
 	/*
 	 * Добавь код для того чтобы завести автомобиль
